@@ -20,7 +20,7 @@ const createComment = async (req, res) => {
       data: {
         id: newComment._id,
         content: newComment.content,
-        post: newComment.post,
+        postId: postId,
       },
     });
     res.status(201).send(newComment);
